@@ -27,20 +27,44 @@ public class IntArrayWorker {
 		return total;
 	}
 
+	public int getLargest() {
+		 int rows = matrix.length;
+     int max = 0;
+     for (int i = 0; i < rows; i++) {
+        for (int data : matrix[i]) {
+         if (data > max) {
+         	max = data;
+        }
+      
+     }
+    
+  }
+    return max;
+	}
+    
+ public int getColTotal(int colnum) {
+  int total = 0;
+  int rows = matrix.length;
+  int max = 0;
+   for (int i = 0; i < rows; i++) {
+        for (int data : matrix[i]) {
+         if (data > max) {
+         	max = data;
+        }
+      
+     }
+    
+  }
+  return total;
+
+ }
+	
+
 	/**
 	 * Method to return the total using a nested for-each loop
 	 * 
-	 * @return the total of the values in the array
+	 *  the total of the values in the array
 	 */
-	public int getTotalNested() {
-		int total = 0;
-		for (int[] rowArray : matrix) {
-			for (int item : rowArray) {
-				total = total + item;
-			}
-		}
-		return total;
-	}
 
 	/**
 	 * Method to fill with an increasing count
@@ -54,6 +78,16 @@ public class IntArrayWorker {
 				count++;
 			}
 		}
+	}
+
+ public int getTotalNested() {
+		int total = 0;
+		for (int[] rowArray : matrix) {
+			for (int item : rowArray) {
+				total = total + item;
+			}
+		}
+		return total;
 	}
 
 	/**
