@@ -11,4 +11,7 @@
 ## Exercises  
 1. Opened and tested the methods
 2. Uncommented and tested the methods  
-3. 
+3. Successfully finished method
+4. Successfully finished method
+5. Successfully finished method  
+6. Successfully finished method
