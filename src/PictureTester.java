@@ -108,11 +108,32 @@ public class PictureTester
 	  sam.mirrorGull(344, 234, 239, 319);
 	  sam.explore();
   }
+  public static void testCopy() {
+	  Picture sam = new Picture("seagull.jpg");
+	  Picture meep = new Picture("beach.jpg");
+	  sam.explore();
+	  sam.copy(meep,40, 50);
+	  sam.explore();
+	  
+  }
+  public static void testCopy2() {
+	  Picture sam = new Picture("seagull.jpg");
+	  Picture meep = new Picture("beach.jpg");
+	  sam.explore();
+	  sam.copy2(meep,40, 50, 100,150);
+	  sam.explore();
+  }
   /** Method to test the collage method */
   public static void testCollage()
   {
     Picture canvas = new Picture("640x480.jpg");
     canvas.createCollage();
+    canvas.explore();
+  }
+  public static void testMyCollage()
+  {
+    Picture canvas = new Picture("640x480.jpg");
+    canvas.myCollage();
     canvas.explore();
   }
   
@@ -145,10 +166,12 @@ public class PictureTester
 	  //testMirrorHorizantalBotToTop();
 	 // testMirrorDiagonal();
     //testMirrorArms();
-    testMirrorGull();
+    //testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
     //testCopy();
+	  //testCopy2();
+	  //testMyCollage();
     //testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
