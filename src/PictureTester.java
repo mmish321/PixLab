@@ -95,7 +95,19 @@ public class PictureTester
     temple.mirrorTemple();
     temple.explore();
   }
-  
+  public static void testMirrorArms() {
+	  Picture snowman = new Picture("snowman.jpg");
+	  snowman.explore();
+	  snowman.mirrorArms(186, 162,105,170);
+	  snowman.mirrorArms(190, 172,239, 296);
+	  snowman.explore();
+  }
+  public static void testMirrorGull() {
+	  Picture sam = new Picture("seagull.jpg");
+	  sam.explore();
+	  sam.mirrorGull(344, 234, 239, 319);
+	  sam.explore();
+  }
   /** Method to test the collage method */
   public static void testCollage()
   {
@@ -128,12 +140,12 @@ public class PictureTester
     //testFixUnderwater();
     //testMirrorVertical();
 	 // testMirrorVerticalRightToLeft();
-    //testMirrorTemple();
+   // testMirrorTemple();
 	 // testMirrorHorizantal();
 	  //testMirrorHorizantalBotToTop();
-	  testMirrorDiagonal();
+	 // testMirrorDiagonal();
     //testMirrorArms();
-    //testMirrorGull();
+    testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
     //testCopy();
