@@ -1,6 +1,6 @@
-# A8  
-
+# A9  
 
 ## Exercises  
-1. Finished Exercise 1 by creating copy2 method!  
-2. Created a beautiful modern collage!
+ 
+1. Finished Edge detection.
+2. Finished our own edge detection
